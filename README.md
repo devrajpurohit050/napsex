@@ -48,19 +48,9 @@ Preview production build locally:
 npm run preview
 ```
 
-## Deploy (Netlify)
+## Deploy
 
-This project is ready for continuous deployment on Netlify. I added a `netlify.toml` with the correct build command and publish directory.
-
-Steps to enable automatic deploy from Git:
-
-1. Push the repo to GitHub.
-2. Sign in to Netlify and choose "New site from Git".
-3. Connect your GitHub repo and select the branch to deploy.
-4. Set the build command to `npm run build` and the publish directory to `dist` (these are already in `netlify.toml`).
-5. Save and deploy — Netlify will build and host the site and auto-deploy on future pushes.
-
-Quick drag-and-drop alternative: build locally with `npm run build` and drop the `dist` folder onto Netlify's drag-and-drop deploy page.
+This project can be deployed to any static hosting (Vercel, Netlify, GitHub Pages, Cloudflare Pages). Build with `npm run build` to create the production `dist` folder and publish that folder to your host of choice.
 
 ## Contributing
 
